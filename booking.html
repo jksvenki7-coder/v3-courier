@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Booking | V3 Group of Business</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places"></script>
+
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="logo">
+<h2>V3 Group of Business</h2>
+<p>Courier & Ride Booking</p>
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="tracking.html">Tracking</a>
+<a href="profile.html">Profile</a>
+
+</nav>
+
+</header>
+
+<section class="booking">
+
+<h2>Book Your Service</h2>
+
+<form id="bookingForm">
+
+<input type="text"
+id="name"
+placeholder="Full Name"
+required>
+
+<input type="tel"
+id="mobile"
+placeholder="Mobile Number"
+required>
+
+<input type="text"
+id="pickup"
+placeholder="Pickup Location"
+required>
+
+<input type="text"
+id="drop"
+placeholder="Drop Location"
+required>
+
+<select id="service">
+
+<option value="">Select Service</option>
+
+<option>Parcel Delivery</option>
+
+<option>Document Delivery</option>
+
+<option>House Shifting</option>
+
+<option>Product Delivery</option>
+
+<option>Car Booking</option>
+
+<option>Bike Booking</option>
+
+<option>Auto Booking</option>
+
+</select>
+
+<input type="date"
+id="date"
+required>
+
+<input type="time"
+id="time"
+required>
+
+<select id="vehicle">
+
+<option>Vehicle Type</option>
+
+<option>Bike</option>
+
+<option>Auto</option>
+
+<option>Mini Van</option>
+
+<option>Pickup Truck</option>
+
+<option>Car</option>
+
+</select>
+
+<textarea
+id="notes"
+placeholder="Special Instructions"
+rows="4"></textarea>
+
+<h3 id="price">Estimated Price : ₹0</h3>
+
+<button type="button"
+onclick="calculatePrice()">
+
+Calculate Price
+
+</button>
+
+<br><br>
+
+<button type="submit">
+
+Confirm Booking
+
+</button>
+
+</form>
+
+</section>
+
+<div id="map"
+style="height:400px;width:100%;"></div>
+
+<script src="js/booking.js"></script>
+
+</body>
+
+</html>
