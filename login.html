@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Login | V3 Group of Business</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="logo">
+
+<h2>V3 Group of Business</h2>
+
+<p>Courier & Ride Booking</p>
+
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="booking.html">Booking</a>
+
+<a href="register.html">Register</a>
+
+</nav>
+
+</header>
+
+<section class="booking">
+
+<h2>Customer Login</h2>
+
+<form id="loginForm">
+
+<input
+type="tel"
+id="mobile"
+placeholder="Enter Mobile Number"
+maxlength="10"
+required>
+
+<button type="button" id="sendOtp">
+
+Send OTP
+
+</button>
+
+<br><br>
+
+<div id="otpSection" style="display:none;">
+
+<input
+type="number"
+id="otp"
+placeholder="Enter OTP">
+
+<button type="button" id="verifyOtp">
+
+Verify OTP
+
+</button>
+
+</div>
+
+</form>
+
+</section>
+
+<footer>
+
+<h3>V3 Group of Business</h3>
+
+<p>All in One App</p>
+
+</footer>
+
+<script type="module" src="js/login.js"></script>
+
+</body>
+
+</html>
