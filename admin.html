@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard | V3 Group of Business</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="logo">
+<h2>V3 Group of Business</h2>
+<p>Admin Dashboard</p>
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="booking.html">Bookings</a>
+<a href="profile.html">Profile</a>
+
+</nav>
+
+</header>
+
+<section class="booking">
+
+<h2>Dashboard</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Total Bookings</h3>
+<h1 id="totalBookings">0</h1>
+</div>
+
+<div class="card">
+<h3>Pending</h3>
+<h1 id="pendingBookings">0</h1>
+</div>
+
+<div class="card">
+<h3>Completed</h3>
+<h1 id="completedBookings">0</h1>
+</div>
+
+<div class="card">
+<h3>Total Customers</h3>
+<h1 id="customers">0</h1>
+</div>
+
+</div>
+
+<br>
+
+<h2>All Bookings</h2>
+
+<table border="1" width="100%" cellpadding="10">
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+<th>Name</th>
+<th>Mobile</th>
+<th>Service</th>
+<th>Status</th>
+<th>Driver</th>
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody id="bookingTable">
+
+</tbody>
+
+</table>
+
+</section>
+
+<script type="module" src="js/admin.js"></script>
+
+</body>
+</html>
