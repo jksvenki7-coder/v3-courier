@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Live Tracking | V3 Group of Business</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY"></script>
+
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="logo">
+
+<h2>V3 Group of Business</h2>
+
+<p>Courier & Ride Booking</p>
+
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="booking.html">Booking</a>
+
+<a href="my-orders.html">My Orders</a>
+
+<a href="profile.html">Profile</a>
+
+</nav>
+
+</header>
+
+<section class="booking">
+
+<h2>Track Your Order</h2>
+
+<input
+type="text"
+id="bookingId"
+placeholder="Enter Booking ID">
+
+<button onclick="trackOrder()">
+
+Track Order
+
+</button>
+
+<br><br>
+
+<h3 id="status">
+
+Status :
+Waiting...
+
+</h3>
+
+<h3 id="driver">
+
+Driver :
+Not Assigned
+
+</h3>
+
+<h3 id="vehicle">
+
+Vehicle :
+-
+
+</h3>
+
+<h3 id="eta">
+
+ETA :
+-
+
+</h3>
+
+<div id="map"
+
+style="height:450px;width:100%;margin-top:20px;">
+
+</div>
+
+<br>
+
+<a id="callDriver"
+
+href="#">
+
+<button>
+
+Call Driver
+
+</button>
+
+</a>
+
+<a id="chatDriver"
+
+href="#"
+target="_blank">
+
+<button>
+
+WhatsApp Driver
+
+</button>
+
+</a>
+
+</section>
+
+<footer>
+
+<h3>V3 Group of Business</h3>
+
+<p>All in One App</p>
+
+</footer>
+
+<script type="module"
+src="js/tracking.js">
+
+</script>
+
+</body>
+
+</html>
